@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JiraGit.Editor</name>
+    </assembly>
+    <members>
+        <member name="M:JiraGit.Editor.Program.Main(System.String[])">
+            <summary>
+            The main entry point for the application.  This program expects a single input argument
+            in the same format as provided by the svn checkin tool.  Use this executable to provide
+            comments/updates from the command-line.
+            </summary>
+        </member>
+    </members>
+</doc>

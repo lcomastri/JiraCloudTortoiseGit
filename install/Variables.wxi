@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+	<?define ProductVersion		= "4.0.1.0" ?>
+	<?define ProductNameBase	= "TortoiseGit Jira Cloud Plugin" ?>
+	<?define ProductCode		= "*" ?>
+	<?define Manufacturer		= "LC" ?>
+	<?define ManufacturerLink	= "https://github.com/lcomastri/JiraTortoiseGit" ?>
+	<?define SourceFolder		= $(var.SolutionDir)bin\$(var.Configuration)\ ?>
+
+	<?if $(var.Platform) = x64 ?>
+		<?define ProductName	= "$(var.ProductNameBase) (64 bit)" ?>
+		<?define Win64			= "yes" ?>
+		<?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+	<?else ?>
+	<?define ProductName	= "$(var.ProductNameBase) (32 bit)" ?>
+		<?define Win64			= "no" ?>
+		<?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+	<?endif ?>
+</Include>

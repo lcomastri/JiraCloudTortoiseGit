@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JiraGit.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:JiraGit.Plugin.TortoiseGitPlugin">
+            <summary>
+            COM Registered InterOp for TortoiseGit integration
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.#ctor">
+            <summary> Constructs a MyPlugin </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.TortoiseGitPlugin.Canceled">
+            <summary> Returns true if the operation was cancelled </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.GetSetting(System.String,System.String)">
+            <summary>Returns a setting. This is taken out of Git properties or config file </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.TortoiseGitPlugin.Connector">
+            <summary> Returns the Issue tracking connector </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.IsConfigured(System.IntPtr,System.String,System.String)">
+            <summary>
+            Returns true if the configuration is present (not nessessarily valid)
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.Logon(System.IntPtr,System.String,System.String)">
+            <summary>
+            Attepts to log on to the specified instance.  The instance url must contain a user
+            name in the format of "http://user@server:port/".
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.GetCommitMsg(System.IntPtr,System.String,System.String,System.String,System.String[])">
+            <summary>
+            Prompt the user for the comments and related issues
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.CommitChanges(System.IntPtr,System.String,System.String,System.Int32,System.String,System.String[])">
+            <summary>
+            Commit the requested changes for any related issues
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.Dispose">
+            <summary> Releases any locked resources </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.Interop#BugTraqProvider#IBugTraqProvider2#ShowOptionsDialog(System.IntPtr,System.String)">
+            TODO: - need to complete implementation for options dialog
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.RegisterFunction(System.Type)">
+            <summary>
+            Registeres this assembly with COM using the custom keys required for TortoiseGit interop
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.TortoiseGitPlugin.UnregisterFunction(System.Type)">
+            <summary>
+            Unregisteres this assembly removing the custom keys required for TortoiseGit interop
+            </summary>
+        </member>
+        <member name="T:JiraGit.Plugin.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.RemoteCertificateChainErrors">
+            <summary>
+              Looks up a localized string similar to Certificate chain has errors..
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.RemoteCertificateNameMismatch">
+            <summary>
+              Looks up a localized string similar to Certificate name mismatch..
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.RemoteCertificateNotAvailable">
+            <summary>
+              Looks up a localized string similar to Certificate not available..
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.Properties.Resources.SslErrorDescPromptFormat">
+             <summary>
+               Looks up a localized string similar to The site ({0}) has an invalid certificate:
+              {1}
+            
+            Issued To: {2}
+            Cert Hash: {3}
+            
+            Do you wish to permanently allow this connection?.
+             </summary>
+        </member>
+        <member name="T:JiraGit.Plugin.UI.ConnectingDialog">
+            <summary>
+            A connection Dialog
+            </summary>
+        </member>
+        <member name="F:JiraGit.Plugin.UI.ConnectingDialog._connectionLabelDots">
+            <summary>
+            The amount of dots currently visible on the label
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.ConnectingDialog.#ctor">
+            <summary>
+            Create a new dialog
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.UI.ConnectingDialog.Worker">
+            <summary>
+            The backgroundworker for this dialog
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.UI.ConnectingDialog.Error">
+            <summary>
+            The Exception from the Worker
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.UI.ConnectingDialog.Argument">
+            <summary>
+            The Argument for the Background Worker
+            </summary>
+        </member>
+        <member name="P:JiraGit.Plugin.UI.ConnectingDialog.Result">
+            <summary>
+            The result of the worker
+            </summary>
+        </member>
+        <member name="F:JiraGit.Plugin.UI.ConnectingDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.ConnectingDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.ConnectingDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:JiraGit.Plugin.UI.BindingComboBox">
+            <summary>
+            What is this for?
+            It fixes a flaw in the databinding of the SelectedIndex property when the databinding
+            is configured to update on property change instead of on validation.  When configured
+            this way the combo box will get confused about the currently selected item and revert
+            it's selection to the prior value.  By subscribing to the change of the SelectedIndex
+            below we can then use the control's "BeginInvoke" to delay execution of the change
+            until after the completion of the control's state change.  This way the control will
+            complete setting the newly selected item prior to us being notified of the property
+            change.
+            </summary>
+        </member>
+        <member name="T:JiraGit.Plugin.UI.IBindingList`1">
+            <summary>
+            A simple binding list interface IBindingList[T] that doubles as an IList[T]
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:JiraGit.Plugin.UI.IssuesList.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.IssuesList.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.IssuesList.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.IssuesListView.SyncComments(System.String)">
+            <summary>
+            Used to re-sync with comments edited within the Tortoise dialog
+            </summary>
+            <param name="newComments"></param>
+        </member>
+        <member name="M:JiraGit.Plugin.UI.IssuesListView.RebuildActions">
+            <summary>
+            Get an intersection of the actions available on all visible and selected items.
+            </summary>
+        </member>
+        <member name="F:JiraGit.Plugin.OptionUrlEntry.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.OptionUrlEntry.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JiraGit.Plugin.OptionUrlEntry.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:JiraGit.Plugin.PasswordEntry.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JiraGit.Plugin.PasswordEntry.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JiraGit.Plugin.PasswordEntry.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

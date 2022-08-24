@@ -1,0 +1,2586 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JiraGit.Jira</name>
+    </assembly>
+    <members>
+        <member name="T:JiraGit.Jira.JiraServices">
+            <summary>
+            Provides an initial connection to Jira Services
+            </summary>
+        </member>
+        <member name="P:JiraGit.Jira.JiraServices.ServiceName">
+            <summary> Names this type of connection </summary>
+        </member>
+        <member name="P:JiraGit.Jira.JiraServices.UriPropertyName">
+            <summary> Property we look for </summary>
+        </member>
+        <member name="M:JiraGit.Jira.JiraServices.Connect(System.String,System.String,System.String,System.Converter{System.String,System.String},JiraGit.Common.Interfaces.IIssuesServiceConnection@)">
+            <summary>
+            Establises a connection to the jira soap server
+            </summary>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.JiraSoapServiceService">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getServerInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.loginCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getComponentsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getAvailableActionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getConfigurationCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByKeyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getPrioritiesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getStatusesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRolesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleActorsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getDefaultRoleActorsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByNameAndTypeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.isProjectRoleNameUniqueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addActorsToProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.removeActorsFromProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addDefaultActorsToProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.removeDefaultActorsFromProjectRoleCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedNotificationSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedPermissionSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getVersionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getCustomFieldsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getFavouriteFiltersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.releaseVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.archiveVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForEditCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesForProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesForProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addUserToGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.removeUserFromGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.logoutCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectWithSchemesByIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.setProjectAvatarCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAvatarCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getNotificationSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getPermissionSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getAllPermissionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createPermissionSchemeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addPermissionToCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionFromCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionSchemeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueWithSecurityLevelCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addAttachmentsToIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getAttachmentsFromIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToEditCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.editCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForActionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.progressWorkflowActionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueByIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogWithNewRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndAutoAdjustRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndRetainRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogWithNewRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndAutoAdjustRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndRetainRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogWithNewRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndAutoAdjustRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndRetainRemainingEstimateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getWorklogsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToCreateWorklogCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToDeleteWorklogCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToUpdateWorklogCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByKeyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueCountForFilterCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromJqlSearchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.updateGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.deleteGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.refreshCustomFieldsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSavedFiltersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addBase64EncodedAttachmentsToIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectFromObjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getSecuritySchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.addVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterWithLimitCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithLimitCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectsNoSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JiraGit.Jira.Jira.JiraSoapServiceService.setNewProjectAvatarCompleted">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getComment(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createGroup(System.String,System.String,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createGroupAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createGroupAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getServerInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getServerInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getServerInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getGroup(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getGroupAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getGroupAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.login(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.loginAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.loginAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createUser(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createUserAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createUserAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getComponents(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getComponentsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getComponentsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssue(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssue(System.String,JiraGit.Jira.Jira.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueAsync(System.String,JiraGit.Jira.Jira.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueAsync(System.String,JiraGit.Jira.Jira.RemoteIssue,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAvailableActions(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAvailableActionsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAvailableActionsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getConfiguration(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getConfigurationAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getConfigurationAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProject(System.String,System.String,System.String,System.String,System.String,System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemoteScheme,JiraGit.Jira.Jira.RemoteScheme)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectAsync(System.String,System.String,System.String,System.String,System.String,System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemoteScheme,JiraGit.Jira.Jira.RemoteScheme)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectAsync(System.String,System.String,System.String,System.String,System.String,System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemoteScheme,JiraGit.Jira.Jira.RemoteScheme,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProject(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByKey(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByKeyAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByKeyAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByProject(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByProjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByProjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPriorities(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPrioritiesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPrioritiesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutions(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getStatuses(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getStatusesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getStatusesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoles(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRolesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRolesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRole(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleActors(System.String,JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleActorsAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectRoleActorsAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getDefaultRoleActors(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getDefaultRoleActorsAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getDefaultRoleActorsAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByNameAndType(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByNameAndTypeAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeAllRoleActorsByNameAndTypeAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectRole(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectRole(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectRole(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectRoleAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.isProjectRoleNameUnique(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.isProjectRoleNameUniqueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.isProjectRoleNameUniqueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addActorsToProjectRole(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addActorsToProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addActorsToProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeActorsFromProjectRole(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeActorsFromProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeActorsFromProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,JiraGit.Jira.Jira.RemoteProject,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addDefaultActorsToProjectRole(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addDefaultActorsToProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addDefaultActorsToProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeDefaultActorsFromProjectRole(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeDefaultActorsFromProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeDefaultActorsFromProjectRoleAsync(System.String,System.String[],JiraGit.Jira.Jira.RemoteProjectRole,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedNotificationSchemes(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedNotificationSchemesAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedNotificationSchemesAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedPermissionSchemes(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedPermissionSchemesAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAssociatedPermissionSchemesAsync(System.String,JiraGit.Jira.Jira.RemoteProjectRole,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProject(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectById(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectByIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getVersions(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getVersionsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getVersionsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCustomFields(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCustomFieldsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCustomFieldsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getComments(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getCommentsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFavouriteFilters(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFavouriteFiltersAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFavouriteFiltersAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.releaseVersion(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.releaseVersionAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.releaseVersionAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.archiveVersion(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.archiveVersionAsync(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.archiveVersionAsync(System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateIssue(System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateIssueAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateIssueAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForEdit(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForEditAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForEditAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesForProject(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesForProjectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueTypesForProjectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesForProject(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesForProjectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSubTaskIssueTypesForProjectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addUserToGroup(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addUserToGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addUserToGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeUserFromGroup(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeUserFromGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.removeUserFromGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup,JiraGit.Jira.Jira.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevel(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addComment(System.String,System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addCommentAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addCommentAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteComment,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.logout(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.logoutAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.logoutAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectWithSchemesById(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectWithSchemesByIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectWithSchemesByIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevels(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecurityLevelsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatars(System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarsAsync(System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarsAsync(System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setProjectAvatar(System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setProjectAvatarAsync(System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setProjectAvatarAsync(System.String,System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatar(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectAvatarAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAvatar(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAvatarAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteProjectAvatarAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getNotificationSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getNotificationSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getNotificationSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPermissionSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPermissionSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getPermissionSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAllPermissions(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAllPermissionsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAllPermissionsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createPermissionScheme(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createPermissionSchemeAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createPermissionSchemeAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addPermissionTo(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addPermissionToAsync(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addPermissionToAsync(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionFrom(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionFromAsync(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionFromAsync(System.String,JiraGit.Jira.Jira.RemotePermissionScheme,JiraGit.Jira.Jira.RemotePermission,JiraGit.Jira.Jira.RemoteEntity,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionScheme(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionSchemeAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deletePermissionSchemeAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueWithSecurityLevel(System.String,JiraGit.Jira.Jira.RemoteIssue,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueWithSecurityLevelAsync(System.String,JiraGit.Jira.Jira.RemoteIssue,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createIssueWithSecurityLevelAsync(System.String,JiraGit.Jira.Jira.RemoteIssue,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addAttachmentsToIssue(System.String,System.String,System.String[],System.SByte[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addAttachmentsToIssueAsync(System.String,System.String,System.String[],System.SByte[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addAttachmentsToIssueAsync(System.String,System.String,System.String[],System.SByte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAttachmentsFromIssue(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAttachmentsFromIssueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getAttachmentsFromIssueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteIssue(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteIssueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteIssueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToEditComment(System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToEditCommentAsync(System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToEditCommentAsync(System.String,JiraGit.Jira.Jira.RemoteComment,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.editComment(System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.editCommentAsync(System.String,JiraGit.Jira.Jira.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.editCommentAsync(System.String,JiraGit.Jira.Jira.RemoteComment,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForAction(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForActionAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getFieldsForActionAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.progressWorkflowAction(System.String,System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.progressWorkflowActionAsync(System.String,System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.progressWorkflowActionAsync(System.String,System.String,System.String,JiraGit.Jira.Jira.RemoteFieldValue[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueById(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueByIdAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueByIdAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogWithNewRemainingEstimate(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogWithNewRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogWithNewRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndAutoAdjustRemainingEstimate(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndAutoAdjustRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndAutoAdjustRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndRetainRemainingEstimate(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndRetainRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addWorklogAndRetainRemainingEstimateAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteWorklog,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogWithNewRemainingEstimate(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogWithNewRemainingEstimateAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogWithNewRemainingEstimateAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndAutoAdjustRemainingEstimate(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndAutoAdjustRemainingEstimateAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndAutoAdjustRemainingEstimateAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndRetainRemainingEstimate(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndRetainRemainingEstimateAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteWorklogAndRetainRemainingEstimateAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogWithNewRemainingEstimate(System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogWithNewRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogWithNewRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndAutoAdjustRemainingEstimate(System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndAutoAdjustRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndAutoAdjustRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndRetainRemainingEstimate(System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndRetainRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateWorklogAndRetainRemainingEstimateAsync(System.String,JiraGit.Jira.Jira.RemoteWorklog,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getWorklogs(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getWorklogsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getWorklogsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToCreateWorklog(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToCreateWorklogAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToCreateWorklogAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToDeleteWorklog(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToDeleteWorklogAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToDeleteWorklogAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToUpdateWorklog(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToUpdateWorklogAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.hasPermissionToUpdateWorklogAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByKey(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByKeyAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByKeyAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateById(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getResolutionDateByIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueCountForFilter(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueCountForFilterAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssueCountForFilterAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearch(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithProject(System.String,System.String[],System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithProjectAsync(System.String,System.String[],System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithProjectAsync(System.String,System.String[],System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromJqlSearch(System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromJqlSearchAsync(System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromJqlSearchAsync(System.String,System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateGroup(System.String,JiraGit.Jira.Jira.RemoteGroup)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.updateGroupAsync(System.String,JiraGit.Jira.Jira.RemoteGroup,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteGroup(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteGroupAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.deleteGroupAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.refreshCustomFields(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.refreshCustomFieldsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.refreshCustomFieldsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSavedFilters(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSavedFiltersAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSavedFiltersAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addBase64EncodedAttachmentsToIssue(System.String,System.String,System.String[],System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addBase64EncodedAttachmentsToIssueAsync(System.String,System.String,System.String[],System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addBase64EncodedAttachmentsToIssueAsync(System.String,System.String,System.String[],System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectFromObject(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectFromObjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.createProjectFromObjectAsync(System.String,JiraGit.Jira.Jira.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecuritySchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecuritySchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getSecuritySchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addVersion(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addVersionAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.addVersionAsync(System.String,System.String,JiraGit.Jira.Jira.RemoteVersion,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilter(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterWithLimit(System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterWithLimitAsync(System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromFilterWithLimitAsync(System.String,System.String,System.Int32,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithLimit(System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithLimitAsync(System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getIssuesFromTextSearchWithLimitAsync(System.String,System.String,System.Int32,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectsNoSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectsNoSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.getProjectsNoSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setNewProjectAvatar(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setNewProjectAvatarAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.setNewProjectAvatarAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JiraGit.Jira.Jira.JiraSoapServiceService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteComment">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.author">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.body">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.created">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.groupLevel">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.roleLevel">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.updateAuthor">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteComment.updated">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteWorklog">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.author">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.comment">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.created">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.groupLevel">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.roleLevelId">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.startDate">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.timeSpent">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.timeSpentInSeconds">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.updateAuthor">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteWorklog.updated">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteAvatar">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.base64Data">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.contentType">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.owner">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.system">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAvatar.type">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteFieldValue">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFieldValue.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFieldValue.values">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteRoleActor">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActor.descriptor">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActor.parameter">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActor.projectRole">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActor.type">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActor.users">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteProjectRole">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProjectRole.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProjectRole.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProjectRole.name">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteUser">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteUser.email">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteUser.fullname">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteUser.name">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteEntity">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteGroup">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteGroup.name">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteGroup.users">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteRoleActors">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActors.projectRole">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActors.roleActors">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteRoleActors.users">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteProjectRoleActors">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProjectRoleActors.project">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteProject">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.issueSecurityScheme">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.key">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.lead">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.notificationScheme">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.permissionScheme">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.projectUrl">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteProject.url">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteScheme">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteScheme.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteScheme.id">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteScheme.name">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteScheme.type">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemotePermissionScheme">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePermissionScheme.permissionMappings">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemotePermissionMapping">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePermissionMapping.permission">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePermissionMapping.remoteEntities">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemotePermission">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePermission.name">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePermission.permission">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.AbstractNamedRemoteEntity">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.AbstractNamedRemoteEntity.name">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.AbstractRemoteEntity">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.AbstractRemoteEntity.id">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteAttachment">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAttachment.author">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAttachment.created">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAttachment.filename">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAttachment.filesize">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteAttachment.mimetype">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteIssue">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.affectsVersions">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.assignee">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.attachmentNames">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.components">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.created">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.customFieldValues">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.duedate">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.environment">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.fixVersions">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.key">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.priority">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.project">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.reporter">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.resolution">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.status">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.summary">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.type">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.updated">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssue.votes">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteVersion">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteVersion.archived">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteVersion.releaseDate">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteVersion.released">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteVersion.sequence">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteComponent">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteCustomFieldValue">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteCustomFieldValue.customfieldId">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteCustomFieldValue.key">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteCustomFieldValue.values">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteSecurityLevel">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteSecurityLevel.description">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteFilter">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFilter.author">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFilter.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFilter.project">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteFilter.xml">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteField">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.AbstractRemoteConstant">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.AbstractRemoteConstant.description">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.AbstractRemoteConstant.icon">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteStatus">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteResolution">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemotePriority">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemotePriority.color">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteIssueType">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteIssueType.subTask">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteNamedObject">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteConfiguration">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowAttachments">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowExternalUserManagment">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowIssueLinking">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowSubTasks">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowTimeTracking">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowUnassignedIssues">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowVoting">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.allowWatching">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.timeTrackingDaysPerWeek">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteConfiguration.timeTrackingHoursPerDay">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteTimeInfo">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteTimeInfo.serverTime">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteTimeInfo.timeZoneId">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.RemoteServerInfo">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.baseUrl">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.buildDate">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.buildNumber">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.edition">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.serverTime">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.RemoteServerInfo.version">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCommentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getCommentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getServerInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getServerInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getServerInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.loginCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.loginCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.loginCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getComponentsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getComponentsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getComponentsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAvailableActionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAvailableActionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getAvailableActionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSubTaskIssueTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSubTaskIssueTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSubTaskIssueTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getConfigurationCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getConfigurationCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getConfigurationCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.updateProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectByKeyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectByKeyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectByKeyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.removeAllRoleActorsByProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getPrioritiesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getPrioritiesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getPrioritiesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getResolutionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssueTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getStatusesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getStatusesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getStatusesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRolesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRolesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectRolesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRoleCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectRoleCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRoleActorsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectRoleActorsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectRoleActorsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getDefaultRoleActorsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getDefaultRoleActorsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getDefaultRoleActorsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.removeAllRoleActorsByNameAndTypeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectRoleCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createProjectRoleCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.isProjectRoleNameUniqueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.isProjectRoleNameUniqueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.isProjectRoleNameUniqueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addActorsToProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.removeActorsFromProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addDefaultActorsToProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.removeDefaultActorsFromProjectRoleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAssociatedNotificationSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAssociatedNotificationSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getAssociatedNotificationSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAssociatedPermissionSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAssociatedPermissionSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getAssociatedPermissionSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectByIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectByIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectByIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getVersionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getVersionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getVersionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCustomFieldsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCustomFieldsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getCustomFieldsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCommentsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getCommentsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getCommentsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFavouriteFiltersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFavouriteFiltersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getFavouriteFiltersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.releaseVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.archiveVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.updateIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFieldsForEditCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFieldsForEditCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getFieldsForEditCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueTypesForProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueTypesForProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssueTypesForProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSubTaskIssueTypesForProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSubTaskIssueTypesForProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSubTaskIssueTypesForProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addUserToGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.removeUserFromGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecurityLevelCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecurityLevelCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSecurityLevelCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.logoutCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.logoutCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.logoutCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectWithSchemesByIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectWithSchemesByIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectWithSchemesByIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecurityLevelsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecurityLevelsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSecurityLevelsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectAvatarsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectAvatarsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectAvatarsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.setProjectAvatarCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectAvatarCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectAvatarCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectAvatarCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteProjectAvatarCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getNotificationSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getNotificationSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getNotificationSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getPermissionSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getPermissionSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getPermissionSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAllPermissionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAllPermissionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getAllPermissionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createPermissionSchemeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createPermissionSchemeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createPermissionSchemeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addPermissionToCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addPermissionToCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.addPermissionToCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deletePermissionFromCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deletePermissionFromCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.deletePermissionFromCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deletePermissionSchemeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createIssueWithSecurityLevelCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createIssueWithSecurityLevelCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createIssueWithSecurityLevelCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addAttachmentsToIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addAttachmentsToIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.addAttachmentsToIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAttachmentsFromIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getAttachmentsFromIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getAttachmentsFromIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToEditCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToEditCommentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.hasPermissionToEditCommentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.editCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.editCommentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.editCommentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFieldsForActionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getFieldsForActionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getFieldsForActionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.progressWorkflowActionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.progressWorkflowActionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.progressWorkflowActionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueByIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueByIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssueByIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addWorklogWithNewRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addWorklogAndAutoAdjustRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addWorklogAndRetainRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteWorklogWithNewRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteWorklogAndAutoAdjustRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteWorklogAndRetainRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateWorklogWithNewRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateWorklogAndAutoAdjustRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateWorklogAndRetainRemainingEstimateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getWorklogsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getWorklogsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getWorklogsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToCreateWorklogCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToCreateWorklogCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.hasPermissionToCreateWorklogCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToDeleteWorklogCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToDeleteWorklogCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.hasPermissionToDeleteWorklogCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToUpdateWorklogCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.hasPermissionToUpdateWorklogCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.hasPermissionToUpdateWorklogCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionDateByKeyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionDateByKeyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getResolutionDateByKeyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionDateByIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getResolutionDateByIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getResolutionDateByIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueCountForFilterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssueCountForFilterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssueCountForFilterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromTextSearchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchWithProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchWithProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromTextSearchWithProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromJqlSearchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromJqlSearchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromJqlSearchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.updateGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.updateGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.deleteGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.refreshCustomFieldsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSavedFiltersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSavedFiltersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSavedFiltersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addBase64EncodedAttachmentsToIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addBase64EncodedAttachmentsToIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.addBase64EncodedAttachmentsToIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectFromObjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.createProjectFromObjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.createProjectFromObjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecuritySchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getSecuritySchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getSecuritySchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.addVersionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.addVersionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromFilterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromFilterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromFilterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromFilterWithLimitCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromFilterWithLimitCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromFilterWithLimitCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchWithLimitCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getIssuesFromTextSearchWithLimitCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getIssuesFromTextSearchWithLimitCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectsNoSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.getProjectsNoSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JiraGit.Jira.Jira.getProjectsNoSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JiraGit.Jira.Jira.setNewProjectAvatarCompletedEventHandler">
+            <remarks/>
+        </member>
+    </members>
+</doc>

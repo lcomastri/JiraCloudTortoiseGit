@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?include Variables.wxi ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<Product Id="$(var.ProductCode)"
+			 UpgradeCode="{95BD9E04-86E1-4EF2-9B81-1EE0B88BCF6E}"
+			 Name="$(var.ProductName)"
+			 Version="$(var.ProductVersion)"
+			 Manufacturer="$(var.Manufacturer)"
+			 Language="1033"
+			 Codepage="1252">
+
+		<Package Comments="A plugin for TortoiseGit to access the JIRA Cloud issue tracker."
+				 InstallerVersion="200"
+				 Platform="$(var.Platform)"
+				 Languages="1033"
+				 SummaryCodepage="1252"
+				 InstallPrivileges="elevated"
+				 Compressed="yes" />
+
+		<MajorUpgrade Schedule="afterInstallValidate"
+					  AllowDowngrades="no"
+					  DowngradeErrorMessage="There is a later version of this product installed" />
+
+		<Media Id="1" Cabinet="Data.cab" EmbedCab="yes" />
+
+		<Property Id="ALLUSERS" Value="1" />
+
+		<Icon Id="I__Application" SourceFile="$(var.SolutionDir)res\Tortoise.ico" />
+
+		<Property Id="ARPPRODUCTICON" Value="I__Application" />
+		<Property Id="ARPCONTACT" Value="CSharpTest.Net" />
+		<Property Id="ARPCOMMENTS" Value="A plugin for TortoiseGit to access the JIRA Cloud issue tracker." />
+		<Property Id="ARPURLINFOABOUT" Value="$(var.ManufacturerLink)" />
+		<Property Id="ARPHELPLINK" Value="$(var.ManufacturerLink)" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="$(var.PlatformProgramFilesFolder)">
+				<Directory Id="INSTALLLOCATION" Name="$(var.ProductNameBase)" FileSource="$(var.SourceFolder)">
+					<Component Id="C__JiraGit" Guid="{CDE2D29D-41AB-4ACC-9174-B4D866FA801D}" Win64="$(var.Win64)">
+						<File Id="F__JiraGit.Common.dll" Name="JiraGit.Common.dll" />
+						<File Id="F__JiraGit.Editor.exe" Name="JiraGit.Editor.exe" KeyPath="yes" />
+						<File Id="F__JiraGit.Editor.exe.config" Name="JiraGit.Editor.exe.config" />
+						<File Id="F__JiraGit.Jira.dll" Name="JiraGit.Jira.dll" />
+						<File Id="F__JiraGit.Plugin.dll" Name="JiraGit.Plugin.dll" />
+						<File Id="F__JiraGit.Plugin.dll.config" Name="JiraGit.Plugin.dll.config" />
+						<File Id="F__SharpSvn.dll" Name="SharpSvn.dll" Source="$(var.SolutionDir)depend\SharpSvn\$(var.Platform)\SharpSvn.dll" />
+						<File Id="F__Tortoise.ico" Name="Tortoise.ico" Source="$(var.SolutionDir)res\Tortoise.ico" />
+						<File Id="F__LICENSE_2.0.txt" Name="LICENSE-2.0.txt" Source="$(var.SolutionDir)LICENSE-2.0.txt" />
+            <File Id="F__Atlassian.Jira.dll"         Name="Atlassian.Jira.dll"         Source="$(var.SolutionDir)depend\Atlassian.NET-sdk\NET40\Atlassian.Jira.dll"/>
+            <File Id="F__Newtonsoft.Json.dll"        Name="Newtonsoft.Json.dll"        Source="$(var.SolutionDir)depend\Atlassian.NET-sdk\NET40\Newtonsoft.Json.dll"/>
+            <File Id="F__RestSharp.dll"              Name="RestSharp.dll"              Source="$(var.SolutionDir)depend\Atlassian.NET-sdk\NET40\RestSharp.dll"/>
+            <File Id="F__CSharpTest.Net.Library.dll" Name="CSharpTest.Net.Library.dll" Source="$(var.SolutionDir)depend\CSharpTest.Net\NET40\CSharpTest.Net.Library.dll"/>
+            <File Id="F__CSharpTest.Net.Logging.dll" Name="CSharpTest.Net.Logging.dll" Source="$(var.SolutionDir)depend\CSharpTest.Net\NET40\CSharpTest.Net.Logging.dll"/>
+
+          </Component>
+				</Directory>
+			</Directory>
+
+			<Component Id="C__Registry" Guid="{40F60023-3D50-4371-983E-D54F994D30D5}" Win64="$(var.Win64)">
+				<RegistryKey Root="HKCR" Key="JiraGit.Plugin.TortoiseGitPlugin" ForceDeleteOnUninstall="yes">
+					<RegistryValue Value="JiraGit.Plugin.TortoiseGitPlugin" Type="string" KeyPath="yes" Action="write" />
+					<RegistryKey Key="CLSID">
+						<RegistryValue Value="{DF843FE8-BB9B-3D8C-8D04-136F5E2B8F0E}" Type="string" Action="write" />
+					</RegistryKey>
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="CLSID\{DF843FE8-BB9B-3D8C-8D04-136F5E2B8F0E}" ForceDeleteOnUninstall="yes">
+					<RegistryValue Value="TortoiseGit Jira Cloud Plugin" Type="string" Action="write" />
+					<RegistryKey Key="ProgId">
+						<RegistryValue Value="JiraGit.Plugin.TortoiseGitPlugin" Type="string" Action="write" />
+					</RegistryKey>
+					<RegistryKey Key="Implemented Categories">
+						<RegistryKey Key="{3494FA92-B139-4730-9591-01135D5E7831}" ForceCreateOnInstall="yes" />
+						<RegistryKey Key="{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}" ForceCreateOnInstall="yes" />
+					</RegistryKey>
+					<RegistryKey Key="InprocServer32">
+						<RegistryValue Value="mscoree.dll" Type="string" Action="write" />
+						<RegistryValue Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+						<RegistryValue Name="Assembly" Value="JiraGit.Plugin, Version=4.0.0.0, Culture=neutral, PublicKeyToken=60c82babf932569d" Type="string" Action="write" />
+						<RegistryValue Name="Class" Value="JiraGit.Plugin.TortoiseGitPlugin" Type="string" Action="write" />
+						<RegistryValue Name="CodeBase" Value="[INSTALLLOCATION]JiraGit.Plugin.dll" Type="string" Action="write" />
+						<RegistryValue Name="ThreadingModel" Value="Both" Type="string" Action="write" />
+					</RegistryKey>
+				</RegistryKey>
+			</Component>
+		</Directory>
+
+		<Feature Id="JiraGit" Title="JiraGit" Level="1">
+			<ComponentRef Id="C__JiraGit" />
+			<ComponentRef Id="C__Registry" />
+		</Feature>
+
+		<UIRef Id="WixUI_Mondo"/>
+		<UIRef Id="WixUI_ErrorProgressText" />
+
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.SolutionDir)LICENSE-2.0.rtf" />
+
+	</Product>
+</Wix>
