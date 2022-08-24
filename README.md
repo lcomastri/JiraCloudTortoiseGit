@@ -25,7 +25,11 @@ Version 4.0.0.0
 
 This is the first project I upload to Github, forgive me If I miss something or made mistakes, in case please bring them to my attention and I will do my best to make the appropriate changes.
 
+Install file created using Wix Toolset v.3.11
+
 Install msi: https://github.com/lcomastri/JiraCloudTortoiseGit/blob/main/bin/Release/JiraTortoiseGitPlugin-x64.msi
+
+
 
 
 
