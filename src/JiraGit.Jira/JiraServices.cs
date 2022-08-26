@@ -45,7 +45,7 @@ namespace JiraGit.Jira
 				connection = new JiraConnection(url, userName, password, settings);
 				return true;
 			}
-			catch (SoapException se)
+			catch (Exception  se)
 			{
 				if (se.Message.IndexOf("RemoteAuthenticationException", StringComparison.OrdinalIgnoreCase) > 0 ||
 					se.Message.IndexOf("Invalid username or password", StringComparison.OrdinalIgnoreCase) > 0)
